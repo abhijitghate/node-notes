@@ -27,3 +27,25 @@ Similarly in node, we have an object named `global` that gives us the access to 
 
 We should always use `const` with `require(...)` method and not `var`
 
+
+## Module wrapper function 
+
+Node does not execute the code as it is. For example, we have a `test.js`
+
+`test.js`
+
+```
+var x' = 'Hello there';
+
+console.log(x);
+```
+It is seen by node as 
+
+```
+(function (exports, require, module, __filename__, __dirname){
+  var x' = 'Hello there';
+
+  console.log(x);
+}
+
+```
