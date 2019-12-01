@@ -43,7 +43,7 @@ It is seen by node as
 
 ```
 (function (exports, require, module, __filename__, __dirname){
-  var x' = 'Hello there';
+  var x = 'Hello there';
 
   console.log(x);
 }
