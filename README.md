@@ -12,3 +12,18 @@ sudo n stable
 ```
 
 Restart the terminal to see the version upgrade
+
+
+##Global objects 
+
+`setTimeout()`, `clearTimeout()`, `setInterval()`, `clearInterval()` are global objects in JavaScript
+
+`window` object is defined for global scope for a browser. We can access all these objects via `window` object.
+
+Similarly in node, we have an object named `global` that gives us the access to global objects of node.
+
+
+##Loading a `module`
+
+We should always use `const` with `require(...)` method and not `var`
+
